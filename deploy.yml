@@ -1,0 +1,9 @@
+kind: PodDisruptionBudget
+apiVersion: policy/v1
+metadata:
+  name: zk-pdb
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      wife: swathy
